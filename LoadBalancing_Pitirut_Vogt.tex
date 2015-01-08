@@ -43,7 +43,7 @@ Folgende Load Balancing Methoden stehen zur Auswahl:
 	\item Agent Based Adaptive Balancing / Server Probes
 \end{itemize}
 
-Um die Komplexität zu steigern, soll zusätzlich eine "Session Persistence" (2 Punkte) implementiert werden.
+Um die Komplexität zu steigern, soll zusätzlich eine /"Session Persistence" (2 Punkte) implementiert werden.
 
 Tests
 
@@ -61,9 +61,14 @@ Viel Erfolg!
 
 Quellen
 
-[1] "Praktische Arbeit 2 zur Vorlesung 'Verteilte Systeme' ETH Zürich, SS 2002", Prof.Dr.B.Plattner, übernommen von Prof.Dr.F.Mattern (http://www.tik.ee.ethz.ch/tik/education/lectures/VS/SS02/Praktikum/aufgabe2.pdf)
+[1] /"Praktische Arbeit 2 zur Vorlesung /'Verteilte Systeme' ETH Zürich, SS 2002", Prof.Dr.B.Plattner, übernommen von Prof.Dr.F.Mattern (http://www.tik.ee.ethz.ch/tik/education/lectures/VS/SS02/Praktikum/aufgabe2.pdf)
 [2] http://www.tik.ee.ethz.ch/education/lectures/VS/SS02/Praktikum/loesung2.zip
-
+\section{Zusatzaufgabe}
+Wegen lauter Klasse gab es folgende  Zusatzaufgaben
+Implementierung von verschiedenen Lastszenarien
+	-MEM
+	-CPU-cycles
+	-I/O
 \section{Designüberlegung}
 Unser erster Schritt war es zwei geeignete Load-Balancing Methoden auszuwählen. Zur Auswahl standen
 \begin{itemize}
@@ -74,8 +79,67 @@ Unser erster Schritt war es zwei geeignete Load-Balancing Methoden auszuwählen.
 	\item Agent Based Adaptive Balancing / Server Probes
 \end{itemize}
 Nachdem wir jede Methode angeschaut hatten, sind wir zu dem Entschluss gekommen, dass wir mit Weighted Round-Robin und 
-Least Connection gut zurecht kommen und optimal für die Aufgabe sind
-\bibliography{Loead Balancer}
+Least Connection gut zurecht kommen und optimal für die Aufgabe sind.
+\section{Arbeitsaufteilung}
+{\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{table}[!h]
+			\center
+			\begin{tabular}{| @{\hspace{3mm}} c @{\hspace{3mm}} | @{\hspace{3mm}} c @{\hspace{3mm}} | @{\hspace{3mm}} c @{\hspace{3mm}} | }
+				\hline
+				& Pitirut & Vogt \\ \hline \hline
+				Weighted Round Robin &  & x \\ \hline
+				Least Connection & x &  \\ \hline
+				Session Persistence &  & x \\ \hline
+				Memory (RAM) & x &  \\ \hline
+				CPU Cycles & x &  \\ \hline
+				I/O Zugriff (Harddisk) &  & x \\ \hline
+				Documentation & x & x \\ \hline
+			\end{tabular}
+		\end{table}
+\end{center}}
+
+\section{Geschätzte Zeit}
+{\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{table}[!h]
+			\center
+			\begin{tabular}{| @{\hspace{3mm}} c @{\hspace{3mm}} | @{\hspace{3mm}} c @{\hspace{3mm}} | @{\hspace{3mm}} c @{\hspace{3mm}} | }
+				\hline
+				& Pitirut & Vogt \\ \hline \hline
+				Weighted Round Robin &  & 2 h \\ \hline
+				Least Connection & 3 h &  \\ \hline
+				Session Persistence &  & 2 h \\ \hline
+				Memory (RAM) & 3 h 30 min &  \\ \hline
+				CPU Cycles & 2 h 30 min &  \\ \hline
+				I/O Zugriff (Harddisk) &  & 4 h \\ \hline
+				Documentation & 1 h 30 min & 2 h 30 min\\ \hline
+				\textbf{Gesamt} & \textbf{10 h 30 m} & \textbf{10 h 30 m} \\\hline
+			\end{tabular}
+		\end{table}
+\end{center}}
+\newpage	
+\section{Tatsächliche Zeit}
+{\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{table}[!h]
+			\center
+			\begin{tabular}{| @{\hspace{3mm}} c @{\hspace{3mm}} | @{\hspace{3mm}} c @{\hspace{3mm}} | @{\hspace{3mm}} c @{\hspace{3mm}} | }
+				\hline
+				& Pitirut & Vogt \\ \hline \hline
+				Weighted Round Robin &  &  \\ \hline
+				Least Connection &  &  \\ \hline
+				Session Persistence &  &  \\ \hline
+				Memory (RAM) &  &  \\ \hline
+				CPU Cycles &  &  \\ \hline
+				I/O Zugriff (Harddisk) &  &  \\ \hline
+				Documentation &  &  \\ \hline
+				\textbf{Gesamt} & \textbf{ h m} & \textbf{ h m} \\\hline
+			\end{tabular}
+		\end{table}
+	\end{center}}
+\newpage
+\bibliography{Load Balancer}
 \bibliographystyle{plain}
 
 
